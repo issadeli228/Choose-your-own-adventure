@@ -1,7 +1,7 @@
 ﻿
 namespace Choose_your_own_adventure
 {
-    partial class Form1
+    partial class Adventure
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Choose_your_own_adventure
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adventure));
             this.outputLabel = new System.Windows.Forms.Label();
             this.redOutputLabel = new System.Windows.Forms.Label();
             this.blueOutputLabel = new System.Windows.Forms.Label();
@@ -123,7 +123,7 @@ namespace Choose_your_own_adventure
             this.sceneImage.TabIndex = 1;
             this.sceneImage.TabStop = false;
             // 
-            // Form1
+            // Adventure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -138,7 +138,8 @@ namespace Choose_your_own_adventure
             this.Controls.Add(this.sceneImage);
             this.Controls.Add(this.outputLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Adventure";
+            this.Text = "Adventure";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

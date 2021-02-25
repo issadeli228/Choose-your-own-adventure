@@ -12,14 +12,14 @@ using System.Threading;
 
 namespace Choose_your_own_adventure
 {
-    public partial class Form1 : Form
+    public partial class Adventure : Form
     {
         int scene = 0;
 
         Random randGen = new Random();
 
 
-        public Form1()
+        public Adventure()
         {
             InitializeComponent();
         }
