@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D4FBAF2-B66A-4123-9FF8-36C27211F745}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Choose_your_own_adventure</RootNamespace>
+    <AssemblyName>Choose your own adventure</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\you win.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\congrats.webp" />
+    <None Include="Resources\red button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evil_Laugh_Male_6-Himan-1359990674.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\106114__j1987__bushmovement.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\431117__inspectorj__door-front-opening-a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\326460__miekyj__creaking-floor-owi.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\155589__leafs67__walking-in-long-grass.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\237934__f4ngy__blade-sharpen.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\180737__mohomran__alarm-ringing.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\515580__taisssss__closing-cabinet.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\467060__kelsey-w__key-jingle-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\365904__univ-lyon3__fauvre-lola-2016-2017-steps.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17556__incarnadine__elements-fire.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\430708__juandamb__running.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\208805__buldfot__unlocking-door.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360800__kupp2__light-footsteps.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\458461__prometheus888__carengine.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haunted mansion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\front gate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hallway.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked gate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haunted kitchen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haunted staircase.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key on shelf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dim bulb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creepy man.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back fence.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creepy figure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creepy knife.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open gate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car keys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top of staris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car in garage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car leaving.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pit fall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game over.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you win.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
